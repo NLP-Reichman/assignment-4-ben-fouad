@@ -15,7 +15,7 @@ test_sequences = prepare_data(test_raw, tag2id)
 
 def test_prepare_data():
     result = {
-        'dev_texts_shape': dev_sequences["texts"].shape,
+        'dev_texts_shape': dev_sequences["texts"]["input_ids"].shape,
         'train_labels_shape': train_sequences["labels"].shape,
     }
     return result
